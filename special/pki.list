@@ -1,0 +1,15 @@
+# special/pki — Apple/Microsoft 证书验证端点
+DOMAIN,certs-lb.apple.com.akadns.net
+DOMAIN,certs.apple.com
+DOMAIN,crl-lb.apple.com.akadns.net
+DOMAIN,crl.apple.com
+DOMAIN,crl.microsoft.com
+DOMAIN,mscrl.microsoft.com
+DOMAIN,ocsp.apple.com
+DOMAIN,ocsp.microsoft.com
+DOMAIN,ocsp2.apple.com
+DOMAIN,oneocsp.microsoft.com
+DOMAIN,valid.apple.com
+DOMAIN,valid.origin-apple.com.akadns.net
+DOMAIN,www.microsoft.com
+DOMAIN-SUFFIX,msocsp.com

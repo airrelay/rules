@@ -1,0 +1,9 @@
+# provider/gog — GOG
+DOMAIN,gog-cdn-lumen.secure2.footprint.net
+DOMAIN,gog-cdn.akamaized.net
+DOMAIN,gog.salesmanago.com
+DOMAIN-SUFFIX,gog-services.com
+DOMAIN-SUFFIX,gog-statics.com
+DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog.qtlglb.com
+DOMAIN-SUFFIX,gogalaxy.com

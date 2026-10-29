@@ -1,0 +1,20 @@
+# provider/microsoft-office — Microsoft 365 / Office
+DOMAIN,o15.officeredir.microsoft.com
+DOMAIN,office15client.microsoft.com
+DOMAIN,officecdn.microsoft.com
+DOMAIN,officeclient.microsoft.com
+DOMAIN,officepreviewredir.microsoft.com
+DOMAIN,officeredir.microsoft.com
+DOMAIN,r.office.microsoft.com
+DOMAIN-SUFFIX,cloud.microsoft
+DOMAIN-SUFFIX,microsoft365.com
+DOMAIN-SUFFIX,office
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.live.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,officeapps.live.com
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,onenote.net
+DOMAIN-SUFFIX,static.microsoft
+DOMAIN-SUFFIX,usercontent.microsoft

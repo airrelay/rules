@@ -1,0 +1,10 @@
+# provider/windows-update — Windows 更新
+DOMAIN,adl.windows.com
+DOMAIN,definitionupdates.microsoft.com
+DOMAIN,emdl.ws.microsoft.com
+DOMAIN,tsfe.trafficshaping.dsp.mp.microsoft.com
+DOMAIN-SUFFIX,api.cdp.microsoft.com
+DOMAIN-SUFFIX,delivery.mp.microsoft.com
+DOMAIN-SUFFIX,prod.do.dsp.mp.microsoft.com
+DOMAIN-SUFFIX,update.microsoft.com
+DOMAIN-SUFFIX,windowsupdate.com

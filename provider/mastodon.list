@@ -1,0 +1,4 @@
+# provider/mastodon — Mastodon
+DOMAIN-SUFFIX,joinmastodon.org
+DOMAIN-SUFFIX,mastodon.online
+DOMAIN-SUFFIX,mastodon.social
