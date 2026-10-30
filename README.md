@@ -10,7 +10,7 @@
 
 | 规则 | 文件 | 条数 |
 |---|---|---:|
-| 中国大陆 | [region/cn](region/cn.list) | 129622 |
+| 中国大陆 | [region/cn](region/cn.list) | 129618 |
 | 港澳 | [region/hk-mo](region/hk-mo.list) | 15504 |
 | 台湾 | [region/tw](region/tw.list) | 4297 |
 | 东北亚 | [region/northeast-asia](region/northeast-asia.list) | 25281 |
@@ -54,7 +54,7 @@
 | 购物与出行 | [category/shopping-travel](category/shopping-travel.list) | 559 |
 | 社交与社区 | [category/social](category/social.list) | 829 |
 | 网盘与同步 | [category/storage](category/storage.list) | 144 |
-| 视频与直播 | [category/video](category/video.list) | 2047 |
+| 视频与直播 | [category/video](category/video.list) | 2046 |
 
 ## 服务商与产品
 
@@ -143,8 +143,8 @@
 | Apple 更新下载 | [provider/apple-update](provider/apple-update.list) | 21 |
 | App Store | [provider/appstore](provider/appstore.list) | 2 |
 | Bing | [provider/bing](provider/bing.list) | 33 |
-| Google | [provider/google](provider/google.list) | 891 |
-| Google Play | [provider/google-play](provider/google-play.list) | 9 |
+| Google | [provider/google](provider/google.list) | 889 |
+| Google Play | [provider/google-play](provider/google-play.list) | 8 |
 | Google Search | [provider/googlesearch](provider/googlesearch.list) | 2 |
 | iCloud | [provider/icloud](provider/icloud.list) | 60 |
 | Microsoft | [provider/microsoft](provider/microsoft.list) | 760 |
@@ -380,7 +380,7 @@
 
 | 规则 | 文件 | 条数 |
 |---|---|---:|
-| 广告域名 | [special/ads](special/ads.list) | 38534 |
+| 广告域名 | [special/ads](special/ads.list) | 38476 |
 | Apple APNs | [special/apns](special/apns.list) | 2 |
 | 门户与联网检测 | [special/connectivity](special/connectivity.list) | 24 |
 | 软件与内容下载 | [special/downloads](special/downloads.list) | 34 |
@@ -393,12 +393,12 @@
 | 网络授时 | [special/ntp](special/ntp.list) | 169 |
 | Apple/Microsoft 证书验证端点 | [special/pki](special/pki.list) | 14 |
 | iCloud Private Relay | [special/private-relay](special/private-relay.list) | 6 |
-| PT 站点 | [special/private-trackers](special/private-trackers.list) | 306 |
+| PT 站点 | [special/private-trackers](special/private-trackers.list) | 274 |
 | 公开 BT Tracker | [special/public-trackers](special/public-trackers.list) | 431 |
-| 测速服务 | [special/speedtest](special/speedtest.list) | 329 |
+| 测速服务 | [special/speedtest](special/speedtest.list) | 185 |
 | Steam 大陆下载 | [special/steam-cn-downloads](special/steam-cn-downloads.list) | 22 |
 | STUN 发现端点 | [special/stun](special/stun.list) | 535 |
-| 遥测与跟踪 | [special/telemetry](special/telemetry.list) | 40126 |
+| 遥测与跟踪 | [special/telemetry](special/telemetry.list) | 39267 |
 | Windows WNS | [special/wns](special/wns.list) | 1 |
 | Anycast（高置信度范围） | [special/anycast](special/anycast.list) | 8544 |
 
