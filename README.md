@@ -10,20 +10,20 @@
 
 | 规则 | 文件 | 条数 |
 |---|---|---:|
-| 中国大陆 | [region/cn](region/cn.list) | 129618 |
-| 港澳 | [region/hk-mo](region/hk-mo.list) | 15504 |
-| 台湾 | [region/tw](region/tw.list) | 4297 |
-| 东北亚 | [region/northeast-asia](region/northeast-asia.list) | 25281 |
-| 东南亚 | [region/southeast-asia](region/southeast-asia.list) | 63657 |
-| 南亚 | [region/south-asia](region/south-asia.list) | 24908 |
-| 中亚 | [region/central-asia](region/central-asia.list) | 2990 |
-| 西亚 | [region/west-asia](region/west-asia.list) | 29152 |
+| 中国大陆 | [region/cn](region/cn.list) | 129616 |
+| 港澳 | [region/hk-mo](region/hk-mo.list) | 15525 |
+| 台湾 | [region/tw](region/tw.list) | 4294 |
+| 东北亚 | [region/northeast-asia](region/northeast-asia.list) | 25241 |
+| 东南亚 | [region/southeast-asia](region/southeast-asia.list) | 63692 |
+| 南亚 | [region/south-asia](region/south-asia.list) | 24917 |
+| 中亚 | [region/central-asia](region/central-asia.list) | 2988 |
+| 西亚 | [region/west-asia](region/west-asia.list) | 29158 |
 | 俄罗斯 | [region/ru](region/ru.list) | 23231 |
-| 欧洲 | [region/europe](region/europe.list) | 373288 |
-| 美国 | [region/us](region/us.list) | 280187 |
-| 北美其他 | [region/north-america-other](region/north-america-other.list) | 35702 |
-| 拉美与加勒比 | [region/latin-america-caribbean](region/latin-america-caribbean.list) | 46742 |
-| 大洋洲 | [region/oceania](region/oceania.list) | 98481 |
+| 欧洲 | [region/europe](region/europe.list) | 373386 |
+| 美国 | [region/us](region/us.list) | 280308 |
+| 北美其他 | [region/north-america-other](region/north-america-other.list) | 35712 |
+| 拉美与加勒比 | [region/latin-america-caribbean](region/latin-america-caribbean.list) | 46752 |
+| 大洋洲 | [region/oceania](region/oceania.list) | 98482 |
 | 非洲 | [region/africa](region/africa.list) | 14201 |
 | 南极 | [region/antarctica](region/antarctica.list) | 62 |
 
@@ -31,15 +31,15 @@
 
 | 规则 | 文件 | 条数 |
 |---|---|---:|
-| 全部 AI | [category/ai-all](category/ai-all.list) | 341 |
-| 中国大陆 AI | [category/ai-cn](category/ai-cn.list) | 116 |
+| 全部 AI | [category/ai-all](category/ai-all.list) | 344 |
+| 中国大陆 AI | [category/ai-cn](category/ai-cn.list) | 119 |
 | 海外 AI | [category/ai-overseas](category/ai-overseas.list) | 225 |
 | CDN 与托管网络 | [category/cdn](category/cdn.list) | 217 |
 | 云服务 | [category/cloud](category/cloud.list) | 518 |
 | 容器与镜像仓库 | [category/containers](category/containers.list) | 19 |
 | 开发与软件分发 | [category/development](category/development.list) | 697 |
 | 教育与学习 | [category/education](category/education.list) | 16 |
-| 游戏与平台 | [category/gaming](category/gaming.list) | 1241 |
+| 游戏与平台 | [category/gaming](category/gaming.list) | 1242 |
 | 邮件 | [category/mail](category/mail.list) | 13 |
 | 会议与团队协作 | [category/meetings](category/meetings.list) | 34 |
 | 即时通信 | [category/messaging](category/messaging.list) | 280 |
@@ -50,11 +50,11 @@
 | 播客 | [category/podcasts](category/podcasts.list) | 5 |
 | 远程接入 | [category/remote](category/remote.list) | 16 |
 | 学术与期刊 | [category/scholar](category/scholar.list) | 478 |
-| 搜索与知识 | [category/search-knowledge](category/search-knowledge.list) | 95 |
+| 搜索与知识 | [category/search-knowledge](category/search-knowledge.list) | 96 |
 | 购物与出行 | [category/shopping-travel](category/shopping-travel.list) | 559 |
 | 社交与社区 | [category/social](category/social.list) | 829 |
 | 网盘与同步 | [category/storage](category/storage.list) | 144 |
-| 视频与直播 | [category/video](category/video.list) | 2046 |
+| 视频与直播 | [category/video](category/video.list) | 2049 |
 
 ## 服务商与产品
 
@@ -142,12 +142,12 @@
 | Apple TV | [provider/apple-tvplus](provider/apple-tvplus.list) | 9 |
 | Apple 更新下载 | [provider/apple-update](provider/apple-update.list) | 21 |
 | App Store | [provider/appstore](provider/appstore.list) | 2 |
-| Bing | [provider/bing](provider/bing.list) | 33 |
+| Bing | [provider/bing](provider/bing.list) | 34 |
 | Google | [provider/google](provider/google.list) | 889 |
 | Google Play | [provider/google-play](provider/google-play.list) | 8 |
 | Google Search | [provider/googlesearch](provider/googlesearch.list) | 2 |
 | iCloud | [provider/icloud](provider/icloud.list) | 60 |
-| Microsoft | [provider/microsoft](provider/microsoft.list) | 760 |
+| Microsoft | [provider/microsoft](provider/microsoft.list) | 762 |
 | Microsoft 开发工具 | [provider/microsoft-dev](provider/microsoft-dev.list) | 74 |
 | Microsoft 365 / Office | [provider/microsoft-office](provider/microsoft-office.list) | 19 |
 | Microsoft Teams | [provider/microsoft-teams](provider/microsoft-teams.list) | 4 |
@@ -327,7 +327,7 @@
 | Spotify | [provider/spotify](provider/spotify.list) | 32 |
 | TheTVDB | [provider/thetvdb](provider/thetvdb.list) | 1 |
 | TIDAL | [provider/tidal](provider/tidal.list) | 4 |
-| TikTok | [provider/tiktok](provider/tiktok.list) | 56 |
+| TikTok | [provider/tiktok](provider/tiktok.list) | 59 |
 | TMDB | [provider/tmdb](provider/tmdb.list) | 4 |
 | TVB | [provider/tvb](provider/tvb.list) | 22 |
 | TVer | [provider/tver](provider/tver.list) | 6 |
@@ -400,7 +400,7 @@
 | STUN 发现端点 | [special/stun](special/stun.list) | 535 |
 | 遥测与跟踪 | [special/telemetry](special/telemetry.list) | 39267 |
 | Windows WNS | [special/wns](special/wns.list) | 1 |
-| Anycast（高置信度范围） | [special/anycast](special/anycast.list) | 8544 |
+| Anycast（高置信度范围） | [special/anycast](special/anycast.list) | 8579 |
 
 ## 来源与许可
 
