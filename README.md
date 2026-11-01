@@ -1,31 +1,35 @@
-# AirRoute 规则集
+# AirRoute 规则集与 IP 库
 
 所有 `.list` 均为无出口动作的 classical 文本。中国大陆日常直连使用 `region/cn.list`，局域网使用 `special/lan.list`。具体服务域名通常放在分类、厂商总集和地区 IP 前。
 
-中国大陆只提供 `region/cn.list`：国内域名优先，统一核查后的大陆 IP 兜底。地理意见来自 IPLocate 与 DB-IP；运营商清单、BGP 与公共 geofeed 是辅助线索，不投物理位置票。其他地区仅表达地理 IP。跨地区未决争议暂不归属，范围明确的高置信度完整 Anycast 单列，强 partial 候选隔离复核；无证据集合可仅含注释。
+[下载 IP 库](ip-library.csv)：CSV 列为 `family,start,end,region,anycast`，IPv4/IPv6 范围起止均为包含端点，地区标识与公开规则路径一致（例如 `region/cn.list` 对应 `cn`），Anycast 标记为 true/false。规则与 IP 库由同一固定输入构建生成，不包含原始来源、观测证据或任务清单。
 
-厂商总集可含其托管平台全部租户，云/CDN 集合表达基础设施，不能当作某个应用的专属身份。分类按用途筛选成员，供应商的宽范围例外不自动继承。DNS 观测与 CDN 地址不会被转为永久服务归属规则；同一主机上的不同 URL 功能无法只靠域名区分。进程、HTTP、ASN 等条件需要平台相应元数据。
+中国大陆只提供 `region/cn.list`：国内域名优先，统一处理后的大陆 IP 兜底。每次构建都匹配可直接回答事实且范围适用的近期合格观测；没有可用结论时，独立有效地理来源映射为大区后按严格多数选择，无多数采用 IPLocate、DB-IP 主备顺序。有效来源分歧不会直接造成范围缺失。BGP、登记国、ping/traceroute 不能单独证明目标位置，单 IP 证据不推广到整个前缀。全部来源和适用观测均无信息时明确报告覆盖缺口，不伪造归属。
+
+每天固定来源、观测快照和判断规则生成完整产物；新观测在下一次构建使用。仍需补证的问题只在维护侧记录，不阻止有效数据输出，也不提供人工裁决入口。范围明确的 Anycast 保持独立分类，疑似情况不擅自扩大为整个父前缀。
+
+厂商总集可含其托管平台全部租户，云/CDN 集合表达基础设施，不能当作某个应用的专属身份。分类按服务用途和明确官方端点处理，供应商的宽范围例外不自动继承。DNS 观测与 CDN 地址不反推永久服务归属；同一主机上的不同 URL 功能无法只靠域名区分。进程、HTTP、ASN 等条件需要平台相应元数据。
 
 ## 国家地区
 
 | 规则 | 文件 | 条数 |
 |---|---|---:|
-| 中国大陆 | [region/cn](region/cn.list) | 129616 |
-| 港澳 | [region/hk-mo](region/hk-mo.list) | 15525 |
-| 台湾 | [region/tw](region/tw.list) | 4294 |
-| 东北亚 | [region/northeast-asia](region/northeast-asia.list) | 25241 |
-| 东南亚 | [region/southeast-asia](region/southeast-asia.list) | 63692 |
-| 南亚 | [region/south-asia](region/south-asia.list) | 24917 |
-| 中亚 | [region/central-asia](region/central-asia.list) | 2988 |
-| 西亚 | [region/west-asia](region/west-asia.list) | 29158 |
-| 俄罗斯 | [region/ru](region/ru.list) | 23231 |
-| 欧洲 | [region/europe](region/europe.list) | 373386 |
-| 美国 | [region/us](region/us.list) | 280308 |
-| 北美其他 | [region/north-america-other](region/north-america-other.list) | 35712 |
-| 拉美与加勒比 | [region/latin-america-caribbean](region/latin-america-caribbean.list) | 46752 |
-| 大洋洲 | [region/oceania](region/oceania.list) | 98482 |
-| 非洲 | [region/africa](region/africa.list) | 14201 |
-| 南极 | [region/antarctica](region/antarctica.list) | 62 |
+| 中国大陆 | [region/cn](region/cn.list) | 136205 |
+| 港澳 | [region/hk-mo](region/hk-mo.list) | 25414 |
+| 台湾 | [region/tw](region/tw.list) | 7189 |
+| 东北亚 | [region/northeast-asia](region/northeast-asia.list) | 36153 |
+| 东南亚 | [region/southeast-asia](region/southeast-asia.list) | 80668 |
+| 南亚 | [region/south-asia](region/south-asia.list) | 37315 |
+| 中亚 | [region/central-asia](region/central-asia.list) | 6311 |
+| 西亚 | [region/west-asia](region/west-asia.list) | 49264 |
+| 俄罗斯 | [region/ru](region/ru.list) | 31855 |
+| 欧洲 | [region/europe](region/europe.list) | 450779 |
+| 美国 | [region/us](region/us.list) | 482165 |
+| 北美其他 | [region/north-america-other](region/north-america-other.list) | 37903 |
+| 拉美与加勒比 | [region/latin-america-caribbean](region/latin-america-caribbean.list) | 69981 |
+| 大洋洲 | [region/oceania](region/oceania.list) | 34580 |
+| 非洲 | [region/africa](region/africa.list) | 34298 |
+| 南极 | [region/antarctica](region/antarctica.list) | 1562 |
 
 ## 分类服务
 
@@ -400,12 +404,12 @@
 | STUN 发现端点 | [special/stun](special/stun.list) | 535 |
 | 遥测与跟踪 | [special/telemetry](special/telemetry.list) | 39267 |
 | Windows WNS | [special/wns](special/wns.list) | 1 |
-| Anycast（高置信度范围） | [special/anycast](special/anycast.list) | 8579 |
+| Anycast（高置信度范围） | [special/anycast](special/anycast.list) | 8590 |
 
 ## 来源与许可
 
-域名来自 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)（MIT）、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（GPL-2.0）、[dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list)（WTFPL）。中国网络辅助分类来自 [gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)（MIT）。地理原料 powered by [IPLocate.io](https://www.iplocate.io)（CC BY-SA 4.0）与 [DB-IP Lite](https://db-ip.com/db/download/ip-to-country-lite)（CC BY 4.0）。数据经过地区映射、争议隔离及等价聚合，相应署名与衍生许可继续适用。
+域名来自 [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community)（MIT）、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（GPL-2.0）、[dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list)（WTFPL）。中国网络辅助分类来自 [gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)（MIT）。地理原料 powered by [IPLocate.io](https://www.iplocate.io)（CC BY-SA 4.0）与 [DB-IP Lite](https://db-ip.com/db/download/ip-to-country-lite)（CC BY 4.0）。数据经过地区映射、确定性选择及等价聚合，相应署名与衍生许可继续适用。
 
 Anycast 参考 [LACeS](https://github.com/ut-dacs/anycast-census)（许可见上游）及 [Cloudflare](https://www.cloudflare.com/ips/) / [Google Public DNS](https://developers.google.com/speed/public-dns/docs/isp) 官方范围。域名边界使用 [Mozilla PSL](https://publicsuffix.org/list/)（MPL-2.0），公网/地理地址边界参考 IANA [IPv4](https://www.iana.org/assignments/iana-ipv4-special-registry/) / [IPv6](https://www.iana.org/assignments/iana-ipv6-special-registry/) 特殊地址注册表。维护侧使用 [RIPE RIS](https://ris.ripe.net/docs/ris-whois/) 与 [geofeed-finder](https://github.com/massimocandela/geofeed-finder) 提示；地区映射参考 [UN M49](https://unstats.un.org/unsd/methodology/m49/overview/)。
 
-人工复核端点参考 [Apple 推送](https://support.apple.com/en-us/101555)、[Microsoft 推送](https://learn.microsoft.com/en-us/windows/apps/develop/notifications/push-notifications/firewall-allowlist-config)、[Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)、[Windows Update](https://learn.microsoft.com/en-us/troubleshoot/windows-client/installing-updates-features-roles/windows-update-issues-troubleshooting) 与 [Google 搜索域名调整](https://blog.google/products-and-platforms/products/search/country-code-top-level-domains/)。这些是复核过的端点事实子集，不是完整连通性允许列表。最终目录只含本 README 与规则文件，完整配方在源代码仓库。
+明确官方端点参考 [Apple 推送](https://support.apple.com/en-us/101555)、[Microsoft 推送](https://learn.microsoft.com/en-us/windows/apps/develop/notifications/push-notifications/firewall-allowlist-config)、[Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges)、[Windows Update](https://learn.microsoft.com/en-us/troubleshoot/windows-client/installing-updates-features-roles/windows-update-issues-troubleshooting) 与 [Google 搜索域名调整](https://blog.google/products-and-platforms/products/search/country-code-top-level-domains/)。这些是复核过的端点事实子集，不是完整连通性允许列表。最终目录只含本 README、规则文件与 ip-library.csv，完整配方在源代码仓库。
